@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
+import logo from '@/assets/images/logo-white.png';
+import profileDefault from '@/assets/images/profile.png';
+
 
 const Navbar = () => {
   return (
@@ -38,9 +42,9 @@ const Navbar = () => {
         >
           
           <a className="flex flex-shrink-0 items-center" href="/index.html">
-            <img
+            <Image
               className="h-10 w-auto"
-              src="images/logo-white.png"
+              src={logo}
               alt="PropertyPulse"
             />
 
@@ -127,9 +131,9 @@ const Navbar = () => {
               >
                 <span className="absolute -inset-1.5"></span>
                 <span className="sr-only">Open user menu</span>
-                <img
+                <Image
                   className="h-8 w-8 rounded-full"
-                  src="images/profile.png"
+                  src={profileDefault}
                   alt=""
                 />
               </button>
