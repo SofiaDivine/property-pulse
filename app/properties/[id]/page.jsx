@@ -1,9 +1,15 @@
 import React from 'react'
+'use client';
+import { useRouter } from 'next/navigation';
 
 const PropertyPage = () => {
+  const router = useRouter();
   return (
     <div>
-      PropertyPage
+      <button onClick={() => router.push('/')}
+        className='bg-blue-500 p-2'>
+          Go Home
+      </button>
     </div>
   )
 };
