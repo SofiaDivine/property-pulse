@@ -2,6 +2,7 @@ import React from 'react';
 import '@assets/styles/globals.css';
 import Navbar from '@components/Navbar.jsx';
 import Footer from '@components/Footer.jsx';
+import AuthProvider from '@/components/AuthProvider';
 
 export const metadata = {
   title: 'PropertyPulse | Find The Perfect Rental',
@@ -11,6 +12,7 @@ export const metadata = {
 
 const MainLayout = ({ children }) => {
   return (
+    <AuthProvider>
     <html lang='en'>
 <body>
   <Navbar/>
@@ -20,6 +22,7 @@ const MainLayout = ({ children }) => {
     <Footer/>
 </body>
     </html>
+    </AuthProvider>
   );
 };
 
